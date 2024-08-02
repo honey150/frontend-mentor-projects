@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --slate-300: hsl(212, 45%, 89%);
+      --slate-500: hsl(216, 15%, 48%);
+      --slate-900: hsl(218, 44%, 22%);
+      --fnt-400:  400;
+      --fnt-700: 700;
+    }
+
+    *,*::before,*::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Outfit,"sans-serif";
+      font-size: 15px;
+    }
+
+  
+
+    .qr-card {
+      width: clamp(375px, 100%, 1440px);
+      min-height: 100vh;
+      background-color: var(--slate-300);
+      display: grid;
+      place-content: center;
+    }
+
+    .container {
+      background-color: var(--white);
+      padding: .95rem;
+      border-radius: 1rem;
+      max-width: 275px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .qr-image {
+     width: 100%;
+      height: 250px;
+      border-radius: 0.75rem;
+
+    }
+
+    .container h2,
+    .container p {
+      max-width: 90%;
+      text-align: center;
+    }
+
+    .container > h2 {
+      margin: 1.25rem auto;
+      font-size: 1.2rem;
+     color: var(--slate-900);
+     font-weight: var(--fnt-700);
+    }
+
+    .container > p {
+      font-size: 0.8rem;
+      margin: 0 auto 1rem;
+      color: var(--slate-500);
+      font-weight: var(--fnt-400);
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="qr-card">
+    <div class="container">
+      <img class="qr-image" src="./images/image-qr-code.png" alt="qr code image">
+      <h2>Improve your front-end skills by building projects</h2>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level.</p>
+
+    </div>
+
+  </section>
+</body>
+</html>
